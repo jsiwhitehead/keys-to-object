@@ -7,13 +7,14 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "prettier": "prettier --single-quote --trailing-comma all --write \"src/**/*.ts\"",
+    "prettier":
+      "prettier --single-quote --trailing-comma all --write \"src/**/*.ts\"",
     "clean": "rimraf lib/*",
     "build": "yarn run clean && tsc",
     "prepare": "yarn run build"
   },
   "devDependencies": {
-    "prettier": "^1.9.2",
+    "prettier": "^1.10.2",
     "rimraf": "^2.6.2",
     "typescript": "^2.6.2"
   }
