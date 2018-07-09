@@ -27,7 +27,9 @@ export default function keysToObject<T, U = any>(
       : (valueMap as T);
     const newKey = keyMap
       ? keyMap(key, i)
-      : Array.isArray(key) ? key.map(k => `${k}`) : `${key}`;
+      : Array.isArray(key)
+        ? key.map(k => `${k}`)
+        : `${key}`;
     if (typeof newKey === 'string') return { ...res, [newKey]: newValue };
     newKey.reduce<Nested<T> | T>((r, k, i) => {
       if (i === newKey.length - 1) r[k] = newValue;

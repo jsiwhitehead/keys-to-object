@@ -1,21 +1,21 @@
 {
   "name": "keys-to-object",
   "version": "0.2.0",
-  "description": "Map array of keys into a new object",
-  "author": "Jon Whitehead",
+  "description": "Map an array of keys into a new object",
+  "homepage": "https://github.com/jsiwhitehead/keys-to-object",
   "license": "MIT",
+  "author": "Jon Whitehead",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "prettier":
-      "prettier --single-quote --trailing-comma all --write \"src/**/*.ts\"",
+    "prettier": "prettier --single-quote --trailing-comma all --write \"src/**/*.ts\"",
     "clean": "rimraf lib/*",
     "build": "yarn run clean && tsc",
     "prepare": "yarn run build"
   },
   "devDependencies": {
-    "prettier": "^1.10.2",
+    "prettier": "^1.13.7",
     "rimraf": "^2.6.2",
-    "typescript": "^2.6.2"
+    "typescript": "^2.9.2"
   }
 }
